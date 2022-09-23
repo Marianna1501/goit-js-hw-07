@@ -43,9 +43,9 @@ function modalImgOpen(evt) {
   window.addEventListener('keydown', onCloseBtn);
 
   function onCloseBtn(evt) {
-    if (evt.code === 'Escape') {
+    if ((evt.code === 'Escape', 'click')) {
       getImgAttribute.close();
-      window.removeEventListener('keydown', onCloseBtn);
+      window.removeEventListener('keydown', 'click', onCloseBtn);
     }
   }
 }
